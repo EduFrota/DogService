@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Dog implements Serializable {
 	private static final Long SerialVersionUID = 1L;
 	private Long id;
+	private int TesteCommmit;
 	private String nome;
 	private String idade;
 	private String raca;
