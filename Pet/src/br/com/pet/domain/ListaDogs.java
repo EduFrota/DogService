@@ -1,4 +1,4 @@
-package br.com.pettinder.domain;
+package br.com.pet.domain;
 
 import java.io.Serializable;
 import java.util.List;

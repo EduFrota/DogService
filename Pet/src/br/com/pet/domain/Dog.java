@@ -1,7 +1,11 @@
-package br.com.pettinder.domain;
+package br.com.pet.domain;
 
 import java.io.Serializable;
 
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Dog implements Serializable {
 	private static final Long SerialVersionUID = 1L;
 	private Long id;

@@ -1,4 +1,4 @@
-package br.com.pettinder.domain;
+package br.com.pet.domain;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -6,7 +6,8 @@ import java.util.List;
 
 public class DogService {
 	private DogDAO db = new DogDAO();
-	public List<Dog> getDog(){
+	
+	public List<Dog> getDogs(){
 		try{
 			List<Dog> dogs = db.getDogs();
 			return dogs;

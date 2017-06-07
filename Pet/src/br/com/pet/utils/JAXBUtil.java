@@ -19,8 +19,8 @@ import org.codehaus.jettison.mapped.MappedXMLStreamWriter;
 
 import com.sun.swing.internal.plaf.metal.resources.metal;
 
-import br.com.pettinder.domain.Dog;
-import br.com.pettinder.domain.ListaDogs;
+import br.com.pet.domain.Dog;
+import br.com.pet.domain.ListaDogs;
 
 
 public class JAXBUtil {

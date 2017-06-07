@@ -2,15 +2,15 @@ package Test;
 
 import java.util.List;
 
-import br.com.pettinder.domain.Dog;
-import br.com.pettinder.domain.DogService;
+import br.com.pet.domain.Dog;
+import br.com.pet.domain.DogService;
 import junit.framework.TestCase;
 
 public class DogTest  extends TestCase{
    private DogService dogService = new DogService();
 
    public void testaListaDog(){
-	   List<Dog> dogs = dogService.getDog();
+	   List<Dog> dogs = dogService.getDogs();
 	   assertNotNull(dogs);
 	   assertTrue(dogs.size()>0);
 	   Dog lucy = dogService.findByName("Lucy").get(0);

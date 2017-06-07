@@ -1,4 +1,4 @@
-package br.com.pettinder.domain;
+package br.com.pet.domain;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,7 +20,7 @@ public class BaseDAO {
 			// URL de conexão com o banco de dados
 			String url = "jdbc:mysql://localhost/PetTinder";
 			// Conecta utilizando a URL, usuário e senha.
-			Connection conn = DriverManager.getConnection(url, "PetTinder", "pet123");
+			Connection conn = DriverManager.getConnection(url, "root", "senha");
 			return conn;
 		}
 

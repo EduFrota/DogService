@@ -1,8 +1,6 @@
-package br.com.pettinder.domain;
+package br.com.pet.domain;
 
 
-import br.com.pettinder.domain.Dog;
-import br.com.pettinder.domain.BaseDAO;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,6 +9,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.pet.domain.BaseDAO;
+import br.com.pet.domain.Dog;
 
 
 
