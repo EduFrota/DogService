@@ -53,4 +53,14 @@ public class DogService {
 		// TODO: handle exception
 	}
   }
+  public List<Dog> findByRaca(String raca){
+	  try{
+		  return db.findByRaca(raca);
+		  
+	  }catch (SQLException e) {
+		  return null;
+		// TODO: handle exception
+	}
+  }	  
 }
+

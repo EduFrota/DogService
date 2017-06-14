@@ -66,6 +66,33 @@ public class DogDAO extends BaseDAO{
 		}
 		return dogs;
 	}
+	
+	public List<Dog> findByRaca(String raca) throws SQLException{
+		List<Dog> dogs  = new ArrayList<>();
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		try{
+			conn = getConnection();
+			stmt = conn.prepareStatement("select * from dog where lower(raca) like ?");
+			stmt.setString(1, "%" + raca.toLowerCase() +"%");
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()){
+				Dog d = CreateDog(rs);
+				dogs.add(d);
+
+			}   
+			rs.close();
+		}finally {
+			if(stmt != null){
+				stmt.close();
+			}
+			if(conn !=null){
+				conn.close();
+			}
+		}
+		return dogs;
+	}
+		
 	public List<Dog> getDogs()throws SQLException{
 		List<Dog> dogs  = new ArrayList<>();
 		Connection conn = null;
